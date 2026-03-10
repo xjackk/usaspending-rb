@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
     "changelog_uri"   => "#{spec.homepage}/blob/main/CHANGELOG.md",
     "bug_tracker_uri" => "#{spec.homepage}/issues",
     "rubygems_mfa_required" => "true",
-    "documentation_uri"     => "https://rubydoc.info/gems/usaspending"
+    "documentation_uri"     => "https://rubydoc.info/gems/usaspending-rb"
   }
 
   spec.files = Dir.glob("{lib}/**/*") + %w[LICENSE.txt README.md CHANGELOG.md]

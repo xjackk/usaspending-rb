@@ -179,7 +179,7 @@ module USAspending
       #
       # @param search_text [String] zip code, city name, state, etc.
       # @param geo_layer   [String] "state", "county", "city",
-      #                             "congressional_district", "zip_code", "country"
+      #                             "district", "zip_code", "country"
       # @param limit       [Integer]
       # @return [USAspending::Response]
       # @raise [USAspending::ClientError] on 4xx responses

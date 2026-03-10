@@ -9,13 +9,13 @@ No API key required. The USAspending.gov API is fully public.
 Add to your Gemfile:
 
 ```ruby
-gem 'usaspending'
+gem 'usaspending-rb'
 ```
 
 Then `bundle install`, or install directly:
 
 ```bash
-gem install usaspending
+gem install usaspending-rb
 ```
 
 ## Quick Start
@@ -40,7 +40,7 @@ response = USAspending.awards.search(
   filters: {
     award_type_codes: %w[A B C D],
     place_of_performance_locations: [
-      { country: 'USA', state: 'VA', congressional_district: '08' }
+      { country: 'USA', state: 'VA', district: '08' }
     ]
   },
   fields: ['Award ID', 'Recipient Name', 'Award Amount'],
