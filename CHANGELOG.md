@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 2026-03-10
+
+### Fixed
+- Fix geo_layer values: `congressional_district` → `district` to match actual API
+- Fix NAICS autocomplete response key in examples
+- Fix basic_search example referencing unavailable `total_count`
+- Update YARD docs for correct geo_layer values across Search, Spending, Disaster
+
+### Changed
+- Author and license updated to Jack Killilea
+
+### Added
+- `bin/console` for interactive IRB sessions
+
 ## [0.1.0] - 2026-03-10
 
 ### Added

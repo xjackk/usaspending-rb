@@ -3,7 +3,7 @@
 require_relative "lib/usaspending/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "usaspending"
+  spec.name = "usaspending-rb"
   spec.version = USAspending::VERSION
   spec.authors = ["Jack Killilea"]
   spec.email = ["xkillilea@gmail.com"]
