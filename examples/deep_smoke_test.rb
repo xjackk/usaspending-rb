@@ -430,7 +430,8 @@ results << test('Flow: DoD spending by congressional district') do
   raise 'No district results' if r.results.empty?
 
   top = r.results.max_by { |d| d['aggregated_amount'].to_f }
-  puts "\n    → #{r.results.size} districts, top: #{top['display_name']} ($#{(top['aggregated_amount'].to_f / 1e9).round(2)}B)"
+  amount = (top['aggregated_amount'].to_f / 1e9).round(2)
+  puts "\n    → #{r.results.size} districts, top: #{top['display_name']} ($#{amount}B)"
   r
 end
 
@@ -446,7 +447,8 @@ results << test('Flow: Spending by state for all FY2024 grants') do
   raise 'No state results' if r.results.empty?
 
   top = r.results.max_by { |s| s['aggregated_amount'].to_f }
-  puts "\n    → #{r.results.size} states, top grants: #{top['display_name']} ($#{(top['aggregated_amount'].to_f / 1e9).round(1)}B)"
+  amount = (top['aggregated_amount'].to_f / 1e9).round(1)
+  puts "\n    → #{r.results.size} states, top grants: #{top['display_name']} ($#{amount}B)"
   r
 end
 
