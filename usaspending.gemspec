@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
     agency spending, geographic breakdowns, recipient profiles, and more.
     The first Ruby client targeting the current v2 API.
   DESC
-  spec.homepage = "https://github.com/thepublictab/usaspending-rb"
+  spec.homepage = "https://github.com/xjackk/usaspending-rb"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
 
