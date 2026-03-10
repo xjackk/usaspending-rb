@@ -252,7 +252,7 @@ module USAspending
       # Spending breakdown by geographic area for disaster codes.
       #
       # @param def_codes      [Array<String>]
-      # @param geo_layer      [String] "state", "county", or "congressional_district"
+      # @param geo_layer      [String] "state", "county", or "district"
       # @param spending_type  [String]
       # @param scope          [String] "place_of_performance" or "recipient_location"
       # @return [USAspending::Response]

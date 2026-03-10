@@ -54,7 +54,7 @@ module USAspending
       # Returns spending data grouped by geography (state, county, district).
       #
       # @param scope [String] "place_of_performance" or "recipient_location"
-      # @param geo_layer [String] "state", "county", "congressional_district", etc.
+      # @param geo_layer [String] "state", "county", "district", etc.
       # @param filters [Hash]
       # @param geo_layer_filters [Array<String>]
       # @param subawards [Boolean]

@@ -17,7 +17,7 @@ response = USAspending.awards.search(
   limit: 10
 )
 
-puts "Found #{response.total_count} total awards (showing top #{response.size}):\n\n"
+puts "Top #{response.size} awards by amount:\n\n"
 
 response.each do |award|
   amount = format('$%<amt>.2f', amt: award['Award Amount'].to_f)

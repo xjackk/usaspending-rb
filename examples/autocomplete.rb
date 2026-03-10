@@ -14,7 +14,7 @@ end
 
 puts "\nNAICS codes matching \"software\":"
 USAspending.autocomplete.naics('software', limit: 5).each do |r|
-  puts "  #{r['naics_code']} — #{r['naics_description']}"
+  puts "  #{r['naics']} — #{r['naics_description']}"
 end
 
 puts "\nAgencies matching \"Defense\":"

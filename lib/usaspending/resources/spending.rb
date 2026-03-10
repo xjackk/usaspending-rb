@@ -6,11 +6,10 @@ module USAspending
     # Delegates to {Search} for the actual API calls, adding
     # argument validation and ThePublicTab convenience methods.
     class Spending < Base
-      GEOGRAPHIC_SCOPES = %w[country state county congressional_district
-                             place_of_performance_zip5].freeze
+      GEOGRAPHIC_SCOPES = %w[country state county district].freeze
       CATEGORY_TYPES    = %w[awarding_agency awarding_subagency recipient
                              cfda psc naics country state county
-                             congressional_district recipient_duns
+                             district recipient_duns
                              funding_agency funding_subagency].freeze
 
       # Geographic spending breakdown.
@@ -26,7 +25,7 @@ module USAspending
       # @example Congressional district spending
       #   client.spending.by_geography(
       #     scope: "place_of_performance",
-      #     geo_layer: "congressional_district",
+      #     geo_layer: "district",
       #     geo_layer_filters: ["VA-08"],
       #     filters: { fiscal_years: [2025] }
       #   )
@@ -74,7 +73,7 @@ module USAspending
       def for_district(state_abbr:, district:, fiscal_years: [Time.now.year - 1])
         by_geography(
           scope: 'place_of_performance',
-          geo_layer: 'congressional_district',
+          geo_layer: 'district',
           geo_layer_filters: ["#{state_abbr.upcase}-#{district.rjust(2, '0')}"],
           filters: {
             fiscal_years: fiscal_years,

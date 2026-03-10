@@ -16,14 +16,14 @@ RSpec.describe USAspending::Resources::Spending do
 
       response = spending.by_geography(
         scope: 'place_of_performance',
-        geo_layer: 'congressional_district',
+        geo_layer: 'district',
         geo_layer_filters: ['VA-08'],
         filters: { fiscal_years: [2024] }
       )
 
       expect(mock_client).to have_received(:post).with(
         'search/spending_by_geography/',
-        hash_including(scope: 'place_of_performance', geo_layer: 'congressional_district')
+        hash_including(scope: 'place_of_performance', geo_layer: 'district')
       )
       expect(response.results.first['shape_code']).to eq('VA-08')
     end
@@ -76,7 +76,7 @@ RSpec.describe USAspending::Resources::Spending do
       expect(mock_client).to have_received(:post).with(
         'search/spending_by_geography/',
         hash_including(
-          geo_layer: 'congressional_district',
+          geo_layer: 'district',
           geo_layer_filters: ['VA-08']
         )
       )
