@@ -5,8 +5,8 @@ require_relative "lib/usaspending/version"
 Gem::Specification.new do |spec|
   spec.name = "usaspending"
   spec.version = USAspending::VERSION
-  spec.authors = ["ThePublicTab"]
-  spec.email = ["dev@thepublictab.com"]
+  spec.authors = ["Jack Killilea"]
+  spec.email = ["xkillilea@gmail.com"]
 
   spec.summary = "Ruby client for the USAspending.gov v2 API"
   spec.description = <<~DESC

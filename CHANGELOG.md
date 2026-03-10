@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.0] - 2025-03-09
+## [0.1.0] - 2026-03-10
 
 ### Added
 - **21 resource classes** covering ~120 USAspending.gov v2 API endpoints
