@@ -1,0 +1,50 @@
+require:
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.1
+  Exclude:
+    - '*.gemspec'
+    - 'Gemfile'
+    - 'vendor/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: always
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/ClassLength:
+  Max: 150
+  Exclude:
+    - 'lib/usaspending/client.rb'
+
+Metrics/AbcSize:
+  Max: 20
+  Exclude:
+    - 'lib/usaspending/client.rb'
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - 'lib/usaspending/client.rb'
+
+Metrics/ParameterLists:
+  Max: 10
+  CountKeywordArgs: false
+
+RSpec/MultipleExpectations:
+  Max: 5
+
+RSpec/ExampleLength:
+  Max: 15
+
+RSpec/MultipleDescribes:
+  Enabled: false
+
+RSpec/SpecFilePathFormat:
+  Enabled: false

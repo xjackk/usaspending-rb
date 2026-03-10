@@ -1,0 +1,11 @@
+--markup markdown
+--output-dir doc
+--protected
+--no-private
+--embed-mixins
+--tag api_endpoint:"API Endpoint"
+lib/**/*.rb
+-
+README.md
+CHANGELOG.md
+LICENSE.txt
