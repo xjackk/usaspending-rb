@@ -349,6 +349,10 @@ bundle exec rake        # Default: runs rspec
 - Ruby >= 3.1
 - Faraday ~> 2.0
 
+## Support
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/omgjack)
+
 ## License
 
 MIT License. See [LICENSE.txt](LICENSE.txt).
